@@ -1,0 +1,145 @@
+
+            .header{
+                display: flex;
+                height: 55px;
+                flex-direction: row;
+                justify-content:space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background-color: white;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(198, 196, 196);            
+            z-index: 10;
+        }
+            .left{
+                width: 130px;
+                display: flex;
+                margin-left: 10px;
+                align-items: center;
+            }
+            .menu{
+                height: 24px;
+                width: 30px;
+                margin-right: 20px;
+             }
+             .logo{
+                width: 100px;
+             }
+                .middle{
+                display: flex;
+                margin-left: 70px;
+                margin-right: 35px;
+                max-width: 500px;
+                align-items: center;
+
+                }
+                .search-bar{
+                    flex: 1;
+                    height: 36;
+border-style: solid;
+border-color: rgb(192, 192,192);
+border-radius: 2px;
+                border-width: 1px;
+                margin-left: 10px;
+                font-size: 16px;
+                width: 400px;
+                padding-left: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-family: "Roboto",Arial;
+                 box-shadow: inset 1px 2px 5px rgba(0,0,0, 0.05);
+
+            }
+                .search-icon{
+                    height: 36;
+border-style: solid;
+border-color: rgb(192, 192,192);
+border-radius: 2px;
+                border-width: 1px;
+                font-size: 16px;
+                padding-left: 5px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                font-family: "Roboto",Arial;
+                 box-shadow: inset 1px 2px 5px rgba(0,0,0, 0.05);
+width: 70px;
+                   padding-left: 22px;
+                   padding-right: 22px;
+
+                }
+                .voice-icon{
+                    height: 36px;
+                    width: 36px;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    border-width: 1px;
+                    align-items: center;
+border-style: solid;
+border-color: rgb(192, 192,192);
+                font-size: 16px;
+                padding-left: 7px;
+                padding-right: 7px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                font-family: "Roboto",Arial;
+                 box-shadow: inset 1px 2px 5px rgba(0,0,0, 0.05);
+
+            
+                }
+                .right{
+                    display: flex;
+                align-items: center;
+                gap: 20px;
+                 position: relative;
+                                     margin-right: 38px;
+
+                }
+                .icon{
+                    padding-right: 0px;
+                                    width: 30px;
+
+
+                }
+            
+                .notification{
+                    position: absolute;
+                    background-color: red;
+                    color: white;
+                    font-size: 11px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    border-radius: 50%;
+                     font-family: "Roboto",Arial;
+                    top: 0;
+                    right: 0;
+                }
+                .search-icon,
+                .voice-icon, .upload-icon,.notification-icon , .apps-icon{
+                    position: relative;
+                    cursor: pointer;
+                }
+            .search-icon .tool-tip , .voice-icon .tool-tip , .upload-icon .tool-tip , .notification-icon .tool-tip , .apps-icon .tool-tip{
+                position: absolute;
+                bottom: -25px;
+                background-color: gray;
+                color: white;
+                padding-left: 4px;
+                padding-right: 4px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                font-size: 12px;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.15s;
+                white-space: nowrap;
+
+            }
+            .search-icon:hover .tool-tip, .voice-icon:hover .tool-tip , .upload-icon:hover .tool-tip, .notification-icon:hover .tool-tip, .apps-icon:hover .tool-tip{
+                opacity: 1;
+            }
+            
